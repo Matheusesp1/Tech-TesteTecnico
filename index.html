@@ -88,49 +88,149 @@
       <button class="next">&#10095;</button>
     </div>
   </section>
-
-  <!-- Compre por Marca -->
-<section class="brands-section">
-  <!-- <h2 class="brands-title">Compre por Marca</h2> -->
-  <div class="brands-image">
-    <img src="assets/compre por marcas.png" alt="Marcas da Loja">
-  </div>
-</section>
-
-<!-- Mais Vendidos -->
-<section class="best-sellers-section">
-  <h2 class="best-sellers-title">Mais Vendidos</h2>
-
-  <div class="carousel best-sellers-carousel">
-    <div class="slides">
-      <div class="slide"><img src="assets/Blusa.png" alt="Produto 1"></div>
-      <div class="slide"><img src="assets/Blusa.png" alt="Produto 2"></div>
-      <div class="slide"><img src="assets/Blusa.png" alt="Produto 3"></div>
-      <div class="slide"><img src="assets/Blusa.png" alt="Produto 4"></div>
-      <div class="slide"><img src="assets/Blusa.png" alt="Produto 5"></div>
+ <!-- marcas-->
+<section class="brands-section" id="marcas">
+    <div class="brands-header">
+        <h2 class="brands-title">Compre por Marca</h2>
+        <a href="#todas-marcas" class="ver-todas-btn">Ver todas</a>
     </div>
 
-    <!-- Botões -->
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-  </div>
-</section>
+    <div class="brands-content"> 
+        <img src="assets/marcas.png" alt="Marcas da Loja" class="brands-image-full">
+    </div>
 
-<!-- Banner -->
-<section class="after-best-sellers">
-  <img src="assets/Frame 1261153315.png" alt="Banner Destaque" class="banner-image">
-</section>
+    </section>
 
-<!-- Blog de Artigos -->
-<section class="blog-section">
-  <!-- <h2 class="blog-title">Blog de Artigos</h2> -->
-  <div class="blog-image-container">
-    <img src="assets/rodapé - blog.png" alt="Blog de Artigos" class="blog-image">
-  </div>
-</section>
+  <!-- Mais Vendidos -->
+  <section class="best-sellers-section">
+    <h2 class="best-sellers-title">Mais Vendidos</h2>
 
-  <!-- Rodapé -->
-  <footer class="footer"></footer>
+    <div class="carousel best-sellers-carousel">
+      <div class="slides">
+        <div class="slide"><img src="assets/Blusa.png" alt="Produto 1"></div>
+        <div class="slide"><img src="assets/Blusa.png" alt="Produto 2"></div>
+        <div class="slide"><img src="assets/Blusa.png" alt="Produto 3"></div>
+        <div class="slide"><img src="assets/Blusa.png" alt="Produto 4"></div>
+        <div class="slide"><img src="assets/Blusa.png" alt="Produto 5"></div>
+      </div>
+
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="after-best-sellers">
+    <div class="banner-container">
+      <img src="assets/Frame 1261153315.png" alt="Banner Destaque" class="banner-image">
+      <a href="#" class="banner-button">Envie sua Marca</a>
+    </div>
+  </section>
+
+  <!-- Blog de Artigos -->
+  <section class="blog-section">
+    <div class="blog-header">
+      <h2 class="blog-title">Blog de artigos</h2>
+      <a href="#todos-artigos" class="ver-todas-btn">Ver todas</a>
+    </div>
+
+    <div class="blog-grid">
+      <!-- Card 1 -->
+      <article class="blog-card">
+        <a href="#artigo1" class="blog-card-link">
+          <div class="blog-card-image">
+            <img src="assets/artigo1.png" alt="Moda é se comprar, é pertencimento">
+            <div class="blog-card-overlay">
+              <h3 class="blog-card-title">Moda é se comprar, é pertencimento</h3>
+              <span class="blog-card-date">5 min atrás</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="blog-card">
+        <a href="#artigo2" class="blog-card-link">
+          <div class="blog-card-image">
+            <img src="assets/artigo2.png" alt="O futuro da moda é autoral">
+            <div class="blog-card-overlay">
+              <h3 class="blog-card-title">O futuro da moda é autoral</h3>
+              <span class="blog-card-date">5 min atrás</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="blog-card">
+        <a href="#artigo3" class="blog-card-link">
+          <div class="blog-card-image">
+            <img src="assets/artigo3.png" alt="Saia como for, seja autoral">
+            <div class="blog-card-overlay">
+              <h3 class="blog-card-title">Saia como for, seja autoral</h3>
+              <span class="blog-card-date">5 min atrás</span>
+            </div>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER COMPLETO -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Logo -->
+       <div class="footer-section footer-logo">
+    <img src="assets/logo.png"alt="WE Hate Shopping Logo">
+</div>
+        <!-- Navegue -->
+        <div class="footer-section">
+          <h3>Navegue</h3>
+          <ul>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#esportes">Esportes</a></li>
+            <li><a href="#colecoes">Coleções</a></li>
+          </ul>
+        </div>
+
+        <!-- Ajuda e suporte -->
+        <div class="footer-section">
+          <h3>Ajuda e suporte</h3>
+          <ul>
+            <li><a href="#troca-devolucao">Troca e Devolução</a></li>
+            <li><a href="#politica-entrega">Política de entrega</a></li>
+            <li><a href="#privacidade">Política de privacidade</a></li>
+            <li><a href="#rastrear">Rastrear pedido</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato e Newsletter -->
+        <div class="footer-section footer-contact">
+          <h3>Contato</h3>
+          <p class="contact-info">(11) 98999-9999</p>
+          <p class="contact-info"><a href="mailto:contato@com.br">contato@com.br</a></p>
+          
+          <div class="newsletter-section">
+            <h3>Fique por dentro das nossas novidades</h3>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Email" required id="emailInput" class="email-input">
+              <button type="submit" class="email-button">Enviar</button>
+            </form>
+            <div class="success-message" id="successMessage">
+              ✓ Email cadastrado com sucesso!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rodapé inferior -->
+      <div class="footer-bottom">
+        <p>&copy; WE HATE SHOPPING. Todos os direitos reservados</p>
+        <p><span class="rocket-icon">🚀</span> Acelerada pela <a href="https://turbopartners.com.br" target="_blank">Turbo Partners</a></p>
+      </div>
+    </div>
+  </footer>
 
   <!-- JS -->
   <script src="script.js"></script>
