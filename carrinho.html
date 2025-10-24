@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - We Hate Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar"><p>5% OFF NO PIX</p></div>
+    <header class="header">
+      <div class="container">
+        <img src="assets/logo.png" alt="We Hate Shopping" class="logo">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Produtos <i class="fa-solid fa-chevron-down"></i></a></li>
+          </ul>
+        </nav>
+        <div class="icones-usuario">
+          <a href="busca.html" class="icone-link" aria-label="Buscar produtos"><i class="fas fa-search"></i></a>
+          <a href="login.html" class="icone-link" aria-label="Minha conta"><i class="far fa-user"></i></a>
+          <a href="carrinho.html" class="icone-link" aria-label="Carrinho de compras"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content cart-page">
+        <div class="container">
+            <h1>Seu Carrinho</h1>
+
+            <div class="cart-layout">
+                <section class="cart-items-list" id="lista-carrinho">
+                    <div class="cart-item">
+                        <img src="assets/blusaq.png" alt="Blusa Cropped Floral" class="item-image">
+                        <div class="item-details">
+                            <h3>Blusa Cropped Floral</h3>
+                            <p class="item-price">R$ 99,90</p>
+                            <div class="item-quantity-controls">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="item-quantity">
+                                <button class="quantity-btn">+</button>
+                                <button class="remove-btn">Remover</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="carrinho-vazio" style="display:none;">Seu carrinho está vazio!</p>
+                </section>
+
+                <aside class="cart-summary">
+                    <h2>Resumo da Compra</h2>
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span id="subtotal-valor">R$ 99,90</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Frete:</span>
+                        <span id="frete-valor">A calcular</span>
+                    </div>
+                    <div class="summary-line total-line">
+                        <strong>Total:</strong>
+                        <strong id="total-valor">R$ 99,90</strong>
+                    </div>
+
+                    <a href="/checkout.html" class="checkout-btn">Finalizar Compra</a>
+                    <a href="index.html" class="continue-shopping">Continuar Comprando</a>
+                </aside>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            </div>
+    </footer>
+    <script src="cart.js"></script> 
+</body>
+</html>
