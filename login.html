@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - We Hate Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="top-bar">
+      <p>5% OFF NO PIX</p>
+    </div>
+    <header class="header">
+      <div class="container">
+        <img src="assets/logo.png" alt="We Hate Shopping" class="logo">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Produtos <i class="fa-solid fa-chevron-down"></i></a></li>
+          </ul>
+        </nav>
+        <div class="icones-usuario">
+          <a href="busca.html" class="icone-link" aria-label="Buscar produtos"><i class="fas fa-search"></i></a>
+          <a href="login.html" class="icone-link" aria-label="Minha conta"><i class="far fa-user"></i></a>
+          <a href="carrinho.html" class="icone-link" aria-label="Carrinho de compras"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content login-page">
+        <div class="login-container">
+            <h2>Acesse sua conta</h2>
+            <form action="/autenticar" method="POST" class="login-form">
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Sua senha secreta" required>
+                
+                <a href="#esqueci-senha" class="forgot-password">Esqueci minha senha</a>
+
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+            
+            <p>Ainda não tem conta? <a href="/cadastro.html">Cadastre-se aqui</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section footer-logo">
+                    <img src="assets/logo.png"alt="WE Hate Shopping Logo">
+                </div>
+                <div class="footer-section">
+                    <h3>Navegue</h3>
+                    <ul>
+                        <li><a href="#novidades">Novidades</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#esportes">Esportes</a></li>
+                        <li><a href="#colecoes">Coleções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ajuda e suporte</h3>
+                    <ul>
+                        <li><a href="#troca-devolucao">Troca e Devolução</a></li>
+                        <li><a href="#politica-entrega">Política de entrega</a></li>
+                        <li><a href="#privacidade">Política de privacidade</a></li>
+                        <li><a href="#rastrear">Rastrear pedido</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h3>Contato</h3>
+                    <p class="contact-info">(11) 98999-9999</p>
+                    <p class="contact-info"><a href="mailto:contato@com.br">contato@com.br</a></p>
+                    
+                    <div class="newsletter-section">
+                        <h3>Fique por dentro das nossas novidades</h3>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Email" required id="emailInput" class="email-input">
+                            <button type="submit" class="email-button">Enviar</button>
+                        </button>
+                        <div class="success-message" id="successMessage">
+                          ✓ Email cadastrado com sucesso!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; WE HATE SHOPPING. Todos os direitos reservados</p>
+                <p><span class="rocket-icon">🚀</span> Acelerada pela <a href="https://turbopartners.com.br" target="_blank">Turbo Partners</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
