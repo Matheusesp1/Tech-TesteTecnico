@@ -141,6 +141,71 @@ body {
   border-radius: 8px;
 }
 
+/* ===== MAIS VENDIDOS ===== */
+.best-sellers-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.best-sellers-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #222;
+}
+
+/* */
+.best-sellers-carousel .slide img {
+  border-radius: 8px;
+}
+
+/* ===== BANNER ===== */
+.after-best-sellers {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto; /* espaçamento acima e abaixo */
+  padding: 0 20px;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 8px; /* opcional */
+}
+
+/* ===== BLOG DE ARTIGOS ===== */
+.blog-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.blog-image-container {
+  width: 100%;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 8px; /* opcional */
+}
+
 /* ===== CARROSSEL ===== */
 .carousel {
   position: relative;
