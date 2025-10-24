@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca - We Hate Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar"><p>5% OFF NO PIX</p></div>
+    <header class="header">
+      <div class="container">
+        <img src="assets/logo.png" alt="We Hate Shopping" class="logo">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Produtos <i class="fa-solid fa-chevron-down"></i></a></li>
+          </ul>
+        </nav>
+        <div class="icones-usuario">
+          <a href="busca.html" class="icone-link" aria-label="Buscar produtos"><i class="fas fa-search"></i></a>
+          <a href="login.html" class="icone-link" aria-label="Minha conta"><i class="far fa-user"></i></a>
+          <a href="carrinho.html" class="icone-link" aria-label="Carrinho de compras"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content search-page">
+    <div class="container">
+        <div class="search-block-central"> 
+            
+            <h1>O que você procura hoje?</h1> 
+            
+            <form action="/resultados" method="GET" class="search-form-page">
+                <input type="search" name="q" placeholder="Digite o nome do produto" class="search-input-page">
+                <button type="submit" class="search-btn-page">
+                    <i class="fas fa-search"></i> Busca
+                </button>
+            </form>
+
+            <div class="search-results">
+                <p class="search-tip">Dica: Tente buscar por "Blusa", "Calça Jeans" ou "Nike".</p>
+                </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            </div>
+    </footer>
+</body>
+</html>
