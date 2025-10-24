@@ -63,13 +63,73 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  width: 100%;
-  height: auto;
-  min-height: 400px;
-  background-image: url('assets/E-BANNER__SLIDE_V1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    background-color: #f0f0f0; /* Cor de fundo de fallback */
+
+    /* USANDO FLEXBOX para alinhar os 3 itens lado a lado */
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; /* Garante que todos tenham a mesma altura */
+    text-align: center; 
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+.hero-content {
+    
+    flex: 0 0 40%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    color: #222; 
+    background-color: #fcfcfc; /* Fundo claro para o centro */
+}
+
+.hero-image-left,
+.hero-image-right {
+    /* Define que as imagens laterais devem ocupar o espaço restante (30% cada, por exemplo) */
+    flex: 1; 
+    overflow: hidden; /* Garante que a imagem se ajuste ao contêiner */
+}
+
+.hero-image-left img,
+.hero-image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem sem distorcê-la, preenchendo o espaço */
+    display: block;
+}
+
+.hero-content {
+    text-align: center; 
+}
+
+/* Estilos para o botão Centralizado (Ver Coleção) */
+.ver-colecao-central-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #FFB5C0; /* Cor rosa principal */
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    margin-top: 25px; /* Espaçamento acima do botão */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-colecao-central-btn:hover {
+    background-color: #e5a5af; 
 }
 
 /* ===== FAIXA PASSANTE ===== */
@@ -386,11 +446,22 @@ body {
   display: none;
 }
 
-.icon-menu {
-  width: 28px;
-  height: 28px;
+.container a {
+
+    color: #222; 
+    text-decoration: none; 
 }
 
+.header-icons a {
+    color: #222; /* Cor preta para os ícones */
+    margin-left: 15px; /* Espaçamento entre eles */
+    transition: color 0.2s ease;
+}
+
+.header-icons a:hover {
+    /* Pode ser um cinza mais claro ou a cor principal do seu site */
+    color: #007bff; 
+}
 /* ===== RESPONSIVIDADE HEADER ===== */
 @media (max-width: 768px) {
   .menu-btn { display: block; }
