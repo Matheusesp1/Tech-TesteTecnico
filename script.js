@@ -1,17 +1,7 @@
-const slides = document.querySelector('.slides');
-const slideItems = document.querySelectorAll('.slide');
-const totalSlides = slideItems.length;
-
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-
-let index = 0;
-let slidesPerView = 4;
-
-// Função para criar um carrossel funcional
+// ===== CARROSSÉIS =====
 function createCarousel(carouselSelector) {
   const carousel = document.querySelector(carouselSelector);
-  if (!carousel) return; // evita erro se o carrossel não existir
+  if (!carousel) return;
 
   const slides = carousel.querySelector('.slides');
   const slideItems = carousel.querySelectorAll('.slide');
@@ -23,12 +13,10 @@ function createCarousel(carouselSelector) {
   let index = 0;
   let slidesPerView = 4;
 
-  // Atualiza posição do carrossel
   function updateCarousel() {
     slides.style.transform = `translateX(-${(index * 100) / slidesPerView}%)`;
   }
 
-  // Botões
   nextBtn.addEventListener('click', () => {
     if (index < totalSlides - slidesPerView) {
       index++;
@@ -57,7 +45,6 @@ function createCarousel(carouselSelector) {
     updateCarousel();
   }, 3000);
 
-  // Ajusta slidesPerView conforme largura da tela
   function updateSlidesPerView() {
     const width = window.innerWidth;
     if (width <= 500) {
@@ -75,6 +62,52 @@ function createCarousel(carouselSelector) {
 }
 
 // Inicializa todos os carrosséis
-createCarousel('.carousel'); // Categorias
-createCarousel('.highlight-carousel'); // Destaque da Semana
-createCarousel('.best-sellers-carousel'); // Mais Vendidos
+createCarousel('.carousel');
+createCarousel('.highlight-carousel');
+createCarousel('.best-sellers-carousel');
+
+// ===== NEWSLETTER NO FOOTER =====
+const newsletterForm = document.getElementById('newsletterForm');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const emailInput = document.getElementById('emailInput');
+    const successMsg = document.getElementById('successMessage');
+    const email = emailInput.value;
+    
+    // Aqui você conectaria com seu backend para salvar o email
+    console.log('Email cadastrado:', email);
+    
+    // Exibe mensagem de sucesso
+    successMsg.style.display = 'block';
+    emailInput.value = '';
+    
+    // Esconde a mensagem após 3 segundos
+    setTimeout(() => {
+      successMsg.style.display = 'none';
+    }, 3000);
+  });
+}
+
+// ===== SMOOTH SCROLL PARA LINKS INTERNOS =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    
+    // Ignora se for apenas "#"
+    if (href === '#') {
+      e.preventDefault();
+      return;
+    }
+    
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
